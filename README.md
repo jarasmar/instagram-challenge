@@ -1,6 +1,11 @@
 Instagram Challenge
 ===================
 
+## Tutorial
+Posts and Comments Blog: https://guides.rubyonrails.org/getting_started.html
+Authentication: Devise
+Photos: https://openclassrooms.com/en/courses/4510766-build-dynamic-websites-with-rails/4703886-add-photos-to-posts
+
 ## Instructions
 
 * Challenge time: one weekend
