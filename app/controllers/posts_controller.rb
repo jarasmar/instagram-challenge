@@ -12,6 +12,10 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
+  def edit
+    @post = Post.find(params[:id])
+  end
+
   def create
     # displays the parameters for the post in the form
     # render plain: params[:post].inspect
@@ -24,6 +28,16 @@ class PostsController < ApplicationController
       # si no cumple la validation (length > 5)
       # pasa el objeto de vuelta, tal y como estaba (render y no redirect)
       render 'new'
+    end
+  end
+
+  def update
+    @post = Post.find(params[:id])
+
+    if @post.update(post_params)
+      redirect_to posts_path
+    else
+      render 'edit'
     end
   end
 
