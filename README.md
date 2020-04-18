@@ -5,6 +5,7 @@ Instagram Challenge
 - Posts and Comments Blog: https://guides.rubyonrails.org/getting_started.html
 - Authentication: Devise
 - Photos: https://openclassrooms.com/en/courses/4510766-build-dynamic-websites-with-rails/4703886-add-photos-to-posts
+- Uploading files (Amazon S3): https://www.youtube.com/watch?v=dqjF3C9A-Yg&t=2057s
 
 ## Instructions
 
