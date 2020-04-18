@@ -3,20 +3,20 @@
 
 <%= link_to 'New Post', new_post_path %>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Text</th>
-    <th></th>
-  </tr>
 
+<div class="card text-center mx-auto mt-4" style="width: 30rem;">
   <% @posts.each do |post| %>
-    <tr>
-      <td><%= post.title %></td>
-      <td><%= post.text %></td>
-      <td><%= link_to 'Show', post_path(post) %></td>
-      <td><%= link_to 'Edit', edit_post_path(post) %></td>
-      <td><%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
+  <img src="https://cdn.pixabay.com/photo/2016/03/24/15/53/polaroid-1277003_960_720.jpg" class="card-img-top" alt="...">
+
+  <div class="card-body">
+    <h5 class="card-title"><%= post.title %></h5>
+    <p class="card-text"><%= post.text %></p>
+  </div>
+
+  <div class="card-body">
+    <%= link_to 'Show', post_path(post) %> |
+    <%= link_to 'Edit', edit_post_path(post) %> |
+    <%= link_to 'Delete', post_path(post), method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
   <% end %>
-</table>
+</div>
