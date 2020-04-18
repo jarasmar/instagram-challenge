@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
 
   def index
-    @posts = Post.all
+    @posts = Post.all.reverse
   end
 
   def show
@@ -19,7 +19,7 @@ class PostsController < ApplicationController
     @post = Post.new(post_params)
 
     if @post.save
-      redirect_to @post
+      redirect_to posts_path
     else
       # si no cumple la validation (length > 5)
       # pasa el objeto de vuelta, tal y como estaba (render y no redirect)
