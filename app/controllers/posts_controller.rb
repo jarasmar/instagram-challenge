@@ -19,7 +19,6 @@ class PostsController < ApplicationController
   def create
     # displays the parameters for the post in the form
     # render plain: params[:post].inspect
-
     @post = Post.new(post_params)
 
     if @post.save
@@ -51,7 +50,7 @@ class PostsController < ApplicationController
   private
 
   def post_params
-    params.require(:post).permit(:image, :title, :text)
+    params.require(:post).permit(:image, :image_cache, :title, :text)
   end
 
 end
