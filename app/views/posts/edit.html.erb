@@ -1,0 +1,11 @@
+
+<h1>Edit Post</h1>
+<!---
+Our edit and new page share the same form
+We can remove duplication by using a view partial (prefixed with an underscore)
+app/views/posts/_form.html.erb
+--->
+
+<%= render 'form' %>
+
+<%= link_to 'Back', posts_path %>
