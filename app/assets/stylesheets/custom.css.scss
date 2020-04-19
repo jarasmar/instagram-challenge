@@ -8,5 +8,5 @@
 //   "light": #ececec,
 //   "dark": #222222
 // );
-
-@import 'bootstrap/dist/css/bootstrap';
+@import "bootstrap-sprockets";
+    @import "bootstrap";
