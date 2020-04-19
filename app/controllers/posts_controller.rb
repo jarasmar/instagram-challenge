@@ -20,6 +20,7 @@ class PostsController < ApplicationController
     # displays the parameters for the post in the form
     # render plain: params[:post].inspect
     @post = Post.new(post_params)
+    @post.user_id = current_user.id if user_signed_in?
 
     if @post.save
       redirect_to posts_path
