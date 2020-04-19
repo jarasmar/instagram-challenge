@@ -16,11 +16,17 @@
  */
 
 
- body {
-   background-color: #ececec;
- }
+body {
+  background-color: #ececec;
+}
 
- .card {
-   background-color: white;
-   border-color: #222222;
+.card {
+  background-color: white;
+  border-color: #222222;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
  }
